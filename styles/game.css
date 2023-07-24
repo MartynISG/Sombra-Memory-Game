@@ -1,0 +1,115 @@
+#game-wrapper {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-board {
+  background: white;
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.time-wrapper {
+  margin: 25px 0;
+}
+
+.scores {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player-label {
+  padding: 7px 15px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 5px;
+  max-width: 30%;
+}
+
+#player1-score {
+  background: #4caf50;
+}
+
+#player2-score {
+  background: #e53935;
+}
+
+.game-buttons {
+  display: flex;
+}
+
+.game-btn {
+  margin: 0 10px;
+  padding: 7px 15px;
+  color: white;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.game-btn:hover {
+  opacity: 1;
+}
+
+#start-btn, #config-game {
+  background: #4caf50;
+}
+
+#start-btn:hover, #config-game:hover {
+  background-color: #45a049;
+}
+
+#end-btn {
+  background: #f44336;
+}
+
+#end-btn:hover {
+  background-color: #e53935;
+}
+
+#reset-btn {
+  background: #2196f3;
+}
+
+#reset-btn:hover {
+  background: #1976d2;
+}
+
+#game {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s;
+}
+
+#game-wrapper,
+#game-form {
+  position: absolute;
+}
+
+#game-form {
+  transform: rotateY(0deg);
+  visibility: visible;
+}
+
+#game-wrapper {
+  transform: rotateY(180deg);
+  visibility: hidden;
+}

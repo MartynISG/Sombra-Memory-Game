@@ -1,0 +1,45 @@
+.card {
+  margin: 5px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+}
+
+.card span {
+  transform: scale(-1, 1);
+  visibility: hidden;
+}
+
+.card:hover {
+  background: rgb(161, 161, 161);
+}
+
+.flipped {
+  background-color: #2196f3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.flipped span {
+  visibility: visible;
+}
+
+.guessed {
+  cursor: default;
+  pointer-events: none;
+}
+
+.matched-first {
+  background-color: #4caf50;
+}
+
+.matched-second {
+  background-color: #e53935;
+}

@@ -1,0 +1,39 @@
+#game-form {
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-field {
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-field__label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-field__input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.error-message {
+    font-size: 20px;
+    font-weight: 500;
+    color: darkred;
+    margin-bottom: 10px;
+}

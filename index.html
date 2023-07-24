@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/modal.css">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/game.css">
+  <link rel="stylesheet" href="./styles/cards.css">
+</head>
+
+<body>
+
+  <div id="game">
+    <div id="game-wrapper">
+      <h1>Memory Game</h1>
+      <div class="time-wrapper">Time left: <span id="time-left"></span></div>
+      <div class="scores">
+        <div class="player-label" id="player1-score">Player 1</div>
+        <div id="players-scores"></div>
+        <div class="player-label" id="player2-score">Player 2</div>
+      </div>
+      <div id="game-board"></div>
+      <div class="game-buttons">
+        <button class="game-btn" id="start-btn">Start Game</button>
+        <button class="game-btn" id="end-btn">End Game</button>
+        <button class="game-btn" id="reset-btn">Reset Game</button>
+      </div>
+    </div>
+    <form id="game-form">
+      <div class="form-field">
+        <label class="form-field__label" for="player1">Player 1 Name</label>
+        <input class="form-field__input" name="player1" id="player1" type="text" placeholder="Player 1">
+      </div>
+      <span></span>
+      <div class="form-field">
+        <label class="form-field__label" for="player2">Player 2 Name</label>
+        <input class="form-field__input" name="player2" id="player2" type="text" placeholder="Player 2">
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="game-width">Enter board width (px)</label>
+        <input class="form-field__input" name="width" min="100" max="2000" id="game-width" type="number" placeholder="width">
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="game-height">Enter board height (px)</label>
+        <input class="form-field__input" name="height" min="100" max="2000" id="game-height" type="number" placeholder="height">
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="columns-number">Enter number of columns</label>
+        <input class="form-field__input" name="columnsNumber" min="2" max="10" id="columns-number" type="number" placeholder="columns">
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="rowsNumber">Enter number of rows</label>
+        <input class="form-field__input" name="rowsNumber" min="2" max="10" id="rows-number" type="number" placeholder="rows">
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="time-limit">Enter time limit (s)</label>
+        <input class="form-field__input" name="timeLimit" min="10" max="600" id="time-limit" type="number" placeholder="time limit">
+      </div>
+      <div class="form-field theme-field">
+        <input class="form-field__input" name="theme" id="game-theme" type="checkbox">
+        <label class="form-field__label" for="game-theme">Dark Theme</label>
+      </div>
+      <span class="error-message"></span>
+      <button class="game-btn" id="config-game">
+        New game
+      </button>
+    </form>
+  </div>
+
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
